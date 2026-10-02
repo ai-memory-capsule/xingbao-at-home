@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>一米智能 · 星宝在家</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⭐</text></svg>">
+  <meta name="theme-color" content="#ff7a45">
+  <link rel="stylesheet" href="css/style.css?v=20261002a">
+</head>
+<body>
+  <div class="stage">
+    <!-- 手机外框（桌面端展示用） -->
+    <div class="phone">
+      <div class="notch"></div>
+
+      <!-- 状态栏 -->
+      <div class="statusbar">
+        <span id="clock">9:41</span>
+        <span class="status-icons">📶 🔋</span>
+      </div>
+
+      <!-- 页面容器（JS 渲染） -->
+      <main id="screen" class="screen"></main>
+
+      <!-- 底部标签栏 -->
+      <nav class="tabbar" id="tabbar">
+        <div class="tab active" data-view="home">
+          <span class="tab-ico">🏠</span><span>首页</span>
+        </div>
+        <div class="tab" data-view="tasks">
+          <span class="tab-ico">📋</span><span>任务</span>
+        </div>
+        <div class="tab" data-view="growth">
+          <span class="tab-ico">🌱</span><span>成长</span>
+        </div>
+        <div class="tab" data-view="profile">
+          <span class="tab-ico">👨‍👩‍👧</span><span>我的</span>
+        </div>
+      </nav>
+
+      <!-- 启动流程层（启动页 / 引导 / 登录） -->
+      <div id="bootRoot"></div>
+
+      <!-- 弹层容器 -->
+      <div id="modalRoot"></div>
+      <div id="toast" class="toast"></div>
+    </div>
+
+    <p class="stage-tip">「一米智能 · 星宝在家」产品演示原型 · 参赛 Demo</p>
+  </div>
+
+  <script src="js/app.js?v=20261002a"></script>
+</body>
+</html>
